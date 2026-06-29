@@ -1,0 +1,7 @@
+[
+  {"id": "shift-morning", "name": "Morning", "startTime": "07:00", "endTime": "15:00", "color": "#2e7d32"},
+  {"id": "shift-afternoon", "name": "Afternoon", "startTime": "11:00", "endTime": "19:00", "color": "#f57c00"},
+  {"id": "shift-evening", "name": "Evening", "startTime": "15:00", "endTime": "23:00", "color": "#1565c0"},
+  {"id": "shift-night", "name": "Night", "startTime": "23:00", "endTime": "07:00", "color": "#6a1b9a"},
+  {"id": "shift-full", "name": "Full Day", "startTime": "09:00", "endTime": "21:00", "color": "#00695c"}
+]

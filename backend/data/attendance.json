@@ -1,0 +1,30 @@
+[
+  {
+    "id": "7435fc9e-8e7e-40b1-a26c-2fd925716e37",
+    "userId": "4cff52a7-d040-4da1-9145-d8a42f8a3616",
+    "date": "2026-06-27",
+    "dutyIn": "10:04",
+    "dutyOut": null,
+    "breakStart": null,
+    "breakEnd": null,
+    "onLeave": false,
+    "leaveReason": "",
+    "lateReason": "",
+    "loggedBy": "6ab2bdee-fb2c-427e-8261-11fd88d68b30",
+    "createdAt": "2026-06-27T04:34:34.593Z"
+  },
+  {
+    "id": "008a28f2-6a89-459d-9eb5-2904741ca7c0",
+    "userId": "6ab2bdee-fb2c-427e-8261-11fd88d68b30",
+    "date": "2026-06-27",
+    "dutyIn": null,
+    "dutyOut": null,
+    "breakStart": null,
+    "breakEnd": null,
+    "onLeave": false,
+    "leaveReason": "",
+    "lateReason": "",
+    "loggedBy": "4cff52a7-d040-4da1-9145-d8a42f8a3616",
+    "createdAt": "2026-06-27T06:36:26.126Z"
+  }
+]

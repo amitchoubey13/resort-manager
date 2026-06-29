@@ -1,0 +1,39 @@
+[
+  {
+    "id": "4cff52a7-d040-4da1-9145-d8a42f8a3616",
+    "name": "Amit Choubey",
+    "phone": "9303255019",
+    "pin": "2606",
+    "role": "Owner",
+    "monthlySalary": 0,
+    "createdAt": "2026-06-27T03:54:58.130Z"
+  },
+  {
+    "id": "6ab2bdee-fb2c-427e-8261-11fd88d68b30",
+    "name": "Pankaj Tiwari",
+    "phone": "9336726050",
+    "pin": "9336",
+    "role": "Manager",
+    "monthlySalary": 26000,
+    "createdAt": "2026-06-27T04:23:17.971Z",
+    "shiftStartTime": "11:08"
+  },
+  {
+    "id": "612661cb-cf46-43b3-8981-c7e6117844b2",
+    "name": "Kamlesh Prajapati",
+    "phone": "9131413339",
+    "pin": "9131",
+    "role": "Staff",
+    "monthlySalary": 12000,
+    "createdAt": "2026-06-27T04:28:20.517Z"
+  },
+  {
+    "id": "d9d152ff-0dda-485e-8d68-9e17bc6a68aa",
+    "name": "Hariom",
+    "phone": "7879827718",
+    "pin": "7879",
+    "role": "Staff",
+    "monthlySalary": 0,
+    "createdAt": "2026-06-27T06:41:01.231Z"
+  }
+]

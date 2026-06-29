@@ -1,0 +1,22 @@
+[
+  {
+    "id": "05d527cc-25b2-461d-8f43-9812309fa568",
+    "title": "Muram dalna he",
+    "description": "aage ki muram ko piche dalna he swimming pool ke samne",
+    "category": "General",
+    "assignedTo": "612661cb-cf46-43b3-8981-c7e6117844b2",
+    "requestedBy": null,
+    "status": "Pending",
+    "priority": "Normal",
+    "dueDate": "2026-06-27",
+    "repeatType": "None",
+    "completedAt": null,
+    "notes": "",
+    "attachmentUrl": null,
+    "buyingListItems": [],
+    "lastKitchenAlert": null,
+    "lastLowStockAlert": null,
+    "createdAt": "2026-06-27T06:22:51.587Z",
+    "updatedAt": "2026-06-27T06:22:51.587Z"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Gala Apples",
+    "category": "fruits",
+    "price": 1.49,
+    "unit": "per lb",
+    "imageEmoji": "🍎",
+    "inStock": true,
+    "description": "Crisp and sweet Gala apples, perfect for snacking or baking."
+  },
+  {
+    "id": 2,
+    "name": "Bananas",
+    "category": "fruits",
+    "price": 0.29,
+    "unit": "per lb",
+    "imageEmoji": "🍌",
+    "inStock": true,
+    "description": "Ripe yellow bananas, great for smoothies, cereal, or eating on the go."
+  },
+  {
+    "id": 3,
+    "name": "Strawberries",
+    "category": "fruits",
+    "price": 3.99,
+    "unit": "per pint",
+    "imageEmoji": "🍓",
+    "inStock": true,
+    "description": "Fresh, sun-ripened strawberries bursting with natural sweetness."
+  },
+  {
+    "id": 4,
+    "name": "Navel Oranges",
+    "category": "fruits",
+    "price": 1.29,
+    "unit": "per lb",
+    "imageEmoji": "🍊",
+    "inStock": true,
+    "description": "Seedless navel oranges that are easy to peel and full of vitamin C."
+  },
+  {
+    "id": 5,
+    "name": "Red Grapes",
+    "category": "fruits",
+    "price": 2.49,
+    "unit": "per lb",
+    "imageEmoji": "🍇",
+    "inStock": false,
+    "description": "Plump, seedless red grapes with a rich, sweet flavor."
+  },
+  {
+    "id": 6,
+    "name": "Broccoli",
+    "category": "vegetables",
+    "price": 1.79,
+    "unit": "per head",
+    "imageEmoji": "🥦",
+    "inStock": true,
+    "description": "Fresh-cut broccoli crowns, tender and vibrant green, packed with nutrients."
+  },
+  {
+    "id": 7,
+    "name": "Carrots",
+    "category": "vegetables",
+    "price": 1.19,
+    "unit": "per lb",
+    "imageEmoji": "🥕",
+    "inStock": true,
+    "description": "Organic whole carrots, sweet and crunchy — ideal for roasting or snacking."
+  },
+  {
+    "id": 8,
+    "name": "Roma Tomatoes",
+    "category": "vegetables",
+    "price": 1.49,
+    "unit": "per lb",
+    "imageEmoji": "🍅",
+    "inStock": true,
+    "description": "Firm Roma tomatoes with low moisture content, perfect for sauces and salads."
+  },
+  {
+    "id": 9,
+    "name": "Baby Spinach",
+    "category": "vegetables",
+    "price": 3.49,
+    "unit": "per 5 oz bag",
+    "imageEmoji": "🥬",
+    "inStock": true,
+    "description": "Tender baby spinach leaves, pre-washed and ready to use in salads or sautés."
+  },
+  {
+    "id": 10,
+    "name": "Yellow Onions",
+    "category": "vegetables",
+    "price": 0.89,
+    "unit": "per lb",
+    "imageEmoji": "🧅",
+    "inStock": true,
+    "description": "Pungent yellow onions that caramelize beautifully and add depth to any dish."
+  },
+  {
+    "id": 11,
+    "name": "Russet Potatoes",
+    "category": "vegetables",
+    "price": 0.99,
+    "unit": "per lb",
+    "imageEmoji": "🥔",
+    "inStock": false,
+    "description": "Starchy russet potatoes, the classic choice for baking, mashing, or frying."
+  },
+  {
+    "id": 12,
+    "name": "Whole Milk",
+    "category": "dairy",
+    "price": 3.79,
+    "unit": "per gallon",
+    "imageEmoji": "🥛",
+    "inStock": true,
+    "description": "Fresh whole milk from local farms, rich and creamy with full-bodied flavor."
+  },
+  {
+    "id": 13,
+    "name": "Salted Butter",
+    "category": "dairy",
+    "price": 4.49,
+    "unit": "per 1 lb pack",
+    "imageEmoji": "🧈",
+    "inStock": true,
+    "description": "Creamy salted butter made from high-quality cream, great for baking and cooking."
+  },
+  {
+    "id": 14,
+    "name": "Greek Yogurt",
+    "category": "dairy",
+    "price": 5.29,
+    "unit": "per 32 oz tub",
+    "imageEmoji": "🍦",
+    "inStock": true,
+    "description": "Thick, protein-rich plain Greek yogurt with a tangy, satisfying taste."
+  },
+  {
+    "id": 15,
+    "name": "Sharp Cheddar Cheese",
+    "category": "dairy",
+    "price": 4.99,
+    "unit": "per 8 oz block",
+    "imageEmoji": "🧀",
+    "inStock": true,
+    "description": "Aged sharp cheddar with a bold, nutty flavor perfect for snacking or melting."
+  },
+  {
+    "id": 16,
+    "name": "Large Eggs",
+    "category": "dairy",
+    "price": 3.29,
+    "unit": "per dozen",
+    "imageEmoji": "🥚",
+    "inStock": true,
+    "description": "Grade A large eggs from cage-free hens — fresh, versatile, and nutritious."
+  },
+  {
+    "id": 17,
+    "name": "Sourdough Bread",
+    "category": "bakery",
+    "price": 4.99,
+    "unit": "per loaf",
+    "imageEmoji": "🍞",
+    "inStock": true,
+    "description": "Artisan sourdough loaf with a crisp crust and tangy, chewy interior."
+  },
+  {
+    "id": 18,
+    "name": "Blueberry Muffins",
+    "category": "bakery",
+    "price": 5.49,
+    "unit": "per 4-pack",
+    "imageEmoji": "🧁",
+    "inStock": true,
+    "description": "Fluffy bakery-style muffins bursting with fresh blueberries in every bite."
+  },
+  {
+    "id": 19,
+    "name": "Croissants",
+    "category": "bakery",
+    "price": 6.99,
+    "unit": "per 6-pack",
+    "imageEmoji": "🥐",
+    "inStock": true,
+    "description": "Buttery, flaky croissants baked fresh daily — perfect for breakfast or sandwiches."
+  },
+  {
+    "id": 20,
+    "name": "Whole Wheat Bagels",
+    "category": "bakery",
+    "price": 4.29,
+    "unit": "per 6-pack",
+    "imageEmoji": "🥯",
+    "inStock": false,
+    "description": "Hearty whole wheat bagels with a chewy texture and subtle nutty flavor."
+  },
+  {
+    "id": 21,
+    "name": "Cinnamon Rolls",
+    "category": "bakery",
+    "price": 7.49,
+    "unit": "per 5-pack",
+    "imageEmoji": "🌀",
+    "inStock": true,
+    "description": "Soft, pillowy cinnamon rolls swirled with sweet cinnamon and topped with glaze."
+  },
+  {
+    "id": 22,
+    "name": "Orange Juice",
+    "category": "beverages",
+    "price": 4.99,
+    "unit": "per 52 fl oz",
+    "imageEmoji": "🍊",
+    "inStock": true,
+    "description": "100% pure-squeezed orange juice with no added sugar or preservatives."
+  },
+  {
+    "id": 23,
+    "name": "Sparkling Water",
+    "category": "beverages",
+    "price": 5.49,
+    "unit": "per 12-pack",
+    "imageEmoji": "💧",
+    "inStock": true,
+    "description": "Lightly carbonated sparkling water in assorted natural fruit flavors."
+  },
+  {
+    "id": 24,
+    "name": "Cold Brew Coffee",
+    "category": "beverages",
+    "price": 4.29,
+    "unit": "per 32 fl oz",
+    "imageEmoji": "☕",
+    "inStock": true,
+    "description": "Smooth, low-acid cold brew concentrate made from single-origin beans."
+  },
+  {
+    "id": 25,
+    "name": "Green Tea",
+    "category": "beverages",
+    "price": 3.99,
+    "unit": "per 20-bag box",
+    "imageEmoji": "🍵",
+    "inStock": true,
+    "description": "Premium Japanese green tea bags with a light, grassy aroma and clean finish."
+  },
+  {
+    "id": 26,
+    "name": "Lemonade",
+    "category": "beverages",
+    "price": 2.99,
+    "unit": "per 59 fl oz",
+    "imageEmoji": "🍋",
+    "inStock": false,
+    "description": "Old-fashioned style lemonade made with real lemon juice — refreshingly tart and sweet."
+  },
+  {
+    "id": 27,
+    "name": "Tortilla Chips",
+    "category": "snacks",
+    "price": 3.49,
+    "unit": "per 12 oz bag",
+    "imageEmoji": "🌮",
+    "inStock": true,
+    "description": "Crispy, lightly salted corn tortilla chips ideal for dipping or snacking."
+  },
+  {
+    "id": 28,
+    "name": "Mixed Nuts",
+    "category": "snacks",
+    "price": 8.99,
+    "unit": "per 16 oz can",
+    "imageEmoji": "🥜",
+    "inStock": true,
+    "description": "Deluxe mixed nuts featuring cashews, almonds, pecans, and macadamia nuts."
+  },
+  {
+    "id": 29,
+    "name": "Dark Chocolate Bar",
+    "category": "snacks",
+    "price": 2.99,
+    "unit": "each",
+    "imageEmoji": "🍫",
+    "inStock": true,
+    "description": "Rich 70% cacao dark chocolate bar with a deep, slightly bitter flavor."
+  },
+  {
+    "id": 30,
+    "name": "Kettle Popcorn",
+    "category": "snacks",
+    "price": 3.79,
+    "unit": "per 8 oz bag",
+    "imageEmoji": "🍿",
+    "inStock": true,
+    "description": "Sweet and salty kettle-cooked popcorn with an irresistibly crunchy texture."
+  }
+]

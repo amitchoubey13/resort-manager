@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Resort Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="app.js?v=2" defer></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       SETUP SCREEN — shown only on first run
+       (settings.setupDone === false)
+  ════════════════════════════════════════════════ -->
+  <div id="setup-screen" hidden>
+    <div class="auth-card">
+      <h1 class="app-logo">Resort Manager</h1>
+      <p class="auth-subtitle">First-time setup — create the Owner account</p>
+      <form id="setup-form" autocomplete="off">
+        <label>Resort Name
+          <input type="text" id="setup-resort-name" placeholder="e.g. Green Valley Resort" required />
+        </label>
+        <label>Your Name
+          <input type="text" id="setup-name" placeholder="Owner name" required />
+        </label>
+        <label>Phone (optional)
+          <input type="tel" id="setup-phone" placeholder="10-digit mobile number" />
+        </label>
+        <label>PIN (4–6 digits)
+          <input type="password" id="setup-pin" placeholder="Choose a PIN" inputmode="numeric" minlength="4" maxlength="6" required />
+        </label>
+        <label>Confirm PIN
+          <input type="password" id="setup-pin-confirm" placeholder="Re-enter PIN" inputmode="numeric" minlength="4" maxlength="6" required />
+        </label>
+        <label>Shift Start Time
+          <input type="time" id="setup-shift-time" value="10:00" required />
+        </label>
+        <button type="submit" class="btn btn-primary btn-full">Create Owner Account</button>
+        <p id="setup-error" class="form-error" hidden></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SIGN-IN SCREEN
+  ════════════════════════════════════════════════ -->
+  <div id="signin-screen" hidden>
+    <div class="auth-card">
+      <h1 class="app-logo">Resort Manager</h1>
+      <p id="signin-resort-name" class="auth-subtitle"></p>
+      <form id="signin-form" autocomplete="off">
+        <label>Your Name
+          <input type="text" id="signin-name" placeholder="Enter your name" required />
+        </label>
+        <label>PIN
+          <input type="password" id="signin-pin" placeholder="Enter PIN" inputmode="numeric" minlength="4" maxlength="6" required />
+        </label>
+        <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+        <p id="signin-error" class="form-error" hidden></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       MAIN APP (hidden until signed in)
+  ════════════════════════════════════════════════ -->
+  <div id="app" hidden>
+
+    <!-- Alert banners (hidden by default, shown by JS) -->
+    <div id="kitchen-alert-banner" class="alert-banner alert-banner--kitchen" hidden>
+      <span id="kitchen-alert-text"></span>
+      <button class="alert-banner__close" data-dismiss="kitchen-alert-banner">&times;</button>
+    </div>
+    <div id="lowstock-alert-banner" class="alert-banner alert-banner--lowstock" hidden>
+      <span id="lowstock-alert-text"></span>
+      <button class="alert-banner__close" data-dismiss="lowstock-alert-banner">&times;</button>
+    </div>
+    <div id="missed-duty-banner" class="alert-banner alert-banner--missed" hidden>
+      <span id="missed-duty-text"></span>
+      <button class="alert-banner__close" data-dismiss="missed-duty-banner">&times;</button>
+    </div>
+
+    <!-- App header -->
+    <header id="app-header">
+      <div id="header-resort-name" class="header-resort"></div>
+      <div class="header-right">
+        <span id="header-user-display" class="header-user"></span>
+        <button id="signout-btn" class="btn btn-ghost btn-sm">Sign Out</button>
+      </div>
+    </header>
+
+    <!-- Tab bar -->
+    <nav id="tab-bar">
+      <button class="tab-btn active" data-tab="tasks">
+        <span class="tab-icon">&#9998;</span>
+        <span class="tab-label">Tasks</span>
+      </button>
+      <button class="tab-btn" data-tab="attendance">
+        <span class="tab-icon">&#128197;</span>
+        <span class="tab-label">Attendance</span>
+      </button>
+      <button class="tab-btn" data-tab="salary">
+        <span class="tab-icon">&#128178;</span>
+        <span class="tab-label">Salary</span>
+      </button>
+      <button class="tab-btn" data-tab="notify">
+        <span class="tab-icon">&#128172;</span>
+        <span class="tab-label">Notify</span>
+      </button>
+      <button class="tab-btn" data-tab="inventory">
+        <span class="tab-icon">&#128230;</span>
+        <span class="tab-label">Inventory</span>
+      </button>
+      <button class="tab-btn" data-tab="expenses">
+        <span class="tab-icon">&#128203;</span>
+        <span class="tab-label">Expenses</span>
+      </button>
+    </nav>
+
+    <!-- Tab content area — rendered dynamically by app.js -->
+    <main id="tab-content"></main>
+
+  </div><!-- /#app -->
+
+  <!-- ═══════════════════════════════════════════════
+       MODALS (empty shells — filled by app.js)
+  ════════════════════════════════════════════════ -->
+
+  <!-- Generic task create/edit modal -->
+  <div id="task-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box"></div>
+  </div>
+
+  <!-- Generic yes/no confirm modal -->
+  <div id="confirm-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box"></div>
+  </div>
+
+  <!-- Photo lightbox modal -->
+  <div id="photo-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box modal-box--photo"></div>
+  </div>
+
+  <!-- Late check-in notice modal -->
+  <div id="late-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box"></div>
+  </div>
+
+  <!-- Generic message/info modal -->
+  <div id="message-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box"></div>
+  </div>
+
+  <!-- Staff management modal (Owner/Manager only) -->
+  <div id="staff-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box modal-box--wide"></div>
+  </div>
+
+  <!-- Buying list modal (for Inventory Purchase tasks) -->
+  <div id="buying-list-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box modal-box--wide"></div>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast" hidden></div>
+
+</body>
+</html>
